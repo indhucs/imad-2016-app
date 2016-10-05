@@ -20,3 +20,16 @@ button.onclick = function() {
     request.send(null);
     
 };
+
+var nameField = document.getElementById("name");
+var nameVal = nameField.value;
+var subBut = document.getElementById("sub");
+subBut.onclick = function() {
+    var names = [1,2,3];
+    var list = '';
+    for ( var i =0; i< names.length; i++) {
+        list = '<li>' + names[i] + '</li>';
+    }
+    var li = document.getElementById('namelist');
+    li.innerHTML = list;
+}
