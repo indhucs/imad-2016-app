@@ -28,7 +28,7 @@ subBut.onclick = function() {
     var names = [1,2,3];
     var list = '';
     for ( var i =0; i< names.length; i++) {
-        list = '<li>' + names[i] + '</li>';
+        list += '<li>' + names[i] + '</li>';
     }
     var li = document.getElementById('namelist');
     li.innerHTML = list;
